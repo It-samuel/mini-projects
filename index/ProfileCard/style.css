@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    width: 360px;
+    border-radius: 10px;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 8px 15px 40px darkorchid;
+}
+
+.container .probg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkorchid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 130px;
+    
+    
+    
+}
+
+.profile{
+    margin-top: 20px;
+
+}
+
+
+
+.container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile .img{
+    background-color: darkmagenta;
+    padding: 3px;
+    border: 2px solid white;
+    width: 120px;
+    height: 120px;
+    margin-top: 25px;
+    border-radius: 60px;
+    
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.text .des{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Segoe UI';
+}
+
+.text .name{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.container .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;  
+}
+
+.socials ul{
+    list-style: none;
+}
+
+.logos{
+    margin: 10px;
+}
+
+.logos{
+    width: 35px;
+    height: 35px;
+
+}
+
+.container .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.buttons input{
+    margin-left: 20px;
+    height: 30px;
+    width: 100px;
+    padding: 3px;
+    border-radius: 20px;
+    border-color: darkorchid;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons input:hover{
+    color: darkorchid;
+}
+
+
+.container .reactions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    
+
+}
+
+.reactions .like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 0.8px solid;
+    padding: 4px;
+    height: 20px;
+}
+
+.reactions .message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 0.8px solid;
+    padding: 4px;
+    height: 20px;
+}
+
+.reactions .share{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 0.8px solid;
+    padding: 4px;
+    height: 20px;
+
+}
+
+.like img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.message img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.share img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
