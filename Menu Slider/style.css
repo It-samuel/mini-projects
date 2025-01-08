@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap");
+
+:root{
+    --modal-duration: 1s;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    
+}
+
+nav{
+    background-color: var(--primary-color);
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    width: 200px;
+    z-index: 100;
+    border-right: 2px solid rgba(200, 200, 200, 0.5);
+    /* transform: translateX(-100%); */
+}
+
+nav .logo{
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+nav .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+    
+}
+
+nav ul li:first-of-type{
+    padding: 20px;
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    
+    text-decoration: underline;
+}
+
+
