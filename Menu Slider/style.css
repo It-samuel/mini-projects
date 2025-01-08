@@ -16,6 +16,10 @@ body{
     
 }
 
+body.show-nav{
+    transform: translate();
+}
+
 nav{
     background-color: var(--primary-color);
     color: white;
@@ -26,7 +30,7 @@ nav{
     width: 200px;
     z-index: 100;
     border-right: 2px solid rgba(200, 200, 200, 0.5);
-    /* transform: translateX(-100%); */
+    transform: translateX(-100%);
 }
 
 nav .logo{
@@ -70,4 +74,122 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+header{
+    background-color: var(--primary-color);
+    color:#fff;
+    padding: 40px 15px;
+    text-align: center;
+    position: relative;
+    font-size: 130%;
 
+}
+
+header h1{
+    margin: 0;
+}
+
+header p{
+   margin: 30px;
+}
+
+button, input[type="submit"]{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.toggle{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cta-btn{
+    padding: 12px 25px;
+    font-size: 20px;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 800px;
+}
+
+
+/* Modal */
+
+.modal-container{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.modal{
+    background-color: white;
+    width: 500px;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: modal-show var(--modal-duration);
+}
+
+.modal-header{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    
+}
+
+.modal-header h2{
+    margin: 0;
+    border-bottom: 1px solid #333
+}
+
+.modal-content{
+    padding: 20px;
+}
+
+.modal-form div{
+    margin: 15px 0;
+}
+
+.modal-form label{
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.modal-form .form-input{
+    padding: 8px;
+    width: 100%;
+}
+
+.close-btn{
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 8px;
+}
