@@ -27,10 +27,39 @@ function addTransactionDOM(transaction) {
     item.classList.add(transaction.amount < 0 ? 'minus' : 'plus');
 
     item.innerHTML = `
-        ${transaction.text} <span>${sign}${Math.abs(transaction.amount)}</span> <button class="delete-btn">x</button>
+        ${transaction.text} <span>${sign}${Math.abs(transaction.amount)}</span> <button class="delete-btn" onclick="removeTransaction(${transaction.id})">x</button>
     `;
 
     list.appendChild(item);
+}
+
+// Add transactions
+function addTransaction(e) {
+    e.preventDefault();
+
+    if(text.value.trim() === '' || amount.value.trim() === '') {
+        alert('Please add a text and amount');
+    } else {
+        const transaction = {
+            id: generateID(),
+            text: text.value,
+            amount: +amount.value
+        };
+
+        transactions.push(transaction);
+        addTransactionDOM(transaction);
+        updateValues();
+
+        text.value = '';
+        amount.value = '';
+    }
+}
+
+// Remove transaction by ID
+function removeTransaction(id) {
+    transactions = transactions.filter(transaction => transaction.id !== id);
+
+    init();
 }
 
 // Update the balance, income and expense
@@ -63,3 +92,12 @@ function init() {
 }
 
 init();
+
+// Generate random ID
+function generateID() {
+    return Math.floor(Math.random() * 100000000);
+}
+
+
+// Event listeners
+form.addEventListener('submit', addTransaction);
