@@ -33,7 +33,18 @@ body{
    
 }
 
-.img-container .cover{
+.image-container img::after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50% 50%) ;
+    width: 20px;
+    height: 20px;
+}
+
+.img-container img{
     
     border-radius: 70px;
     width: 80px;
@@ -47,9 +58,9 @@ body{
     animation-play-state: paused;
 }
 
-/* .music-container.play .image-container.play{
+.music-container.play .img-container img{
     animation-play-state: running;
-} */
+}
 
 @keyframes rotate{
     from{
@@ -83,4 +94,47 @@ body{
 .action-btn.action-btn-big{
     font-size: 25px;
     color: #cdc2d0;
+}
+
+.music-info{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(0%);
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+    z-index: 0;
+    width: calc(100% - 40px);
+    opacity: 0;
+    height: 60px;
+    padding: 10px 10px 10px 150px; 
+}
+
+.music-container.play .music-info{
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.music-info h4{
+    font-size: 16px;
+    margin: 0;
+    color: #2c2c2c;
+}
+
+.progress-container{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    height: 5px;
+    width: 100%;
+}
+
+.progress{
+    background-color:rgb(133, 177, 243);
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+    transition: width 0.1s linear;
 }
