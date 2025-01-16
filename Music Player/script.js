@@ -117,6 +117,17 @@ progressContainer.addEventListener('click', (e) => {
     audio.currentTime = (clickX / width) * duration;
 });
 
+// Song ends
+audio.addEventListener('ended', () => {
+    songIndex++;
 
+    if (songIndex > songs.length - 1) {
+        songIndex = 0;
+    }
+
+    loadSong(songs[songIndex]);
+
+    playSong();
+});
 
 
