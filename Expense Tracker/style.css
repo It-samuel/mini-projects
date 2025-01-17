@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #f7f7f7;
+    background-color: rgba(45, 90, 116, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body{
 }
 
 .container{
-    margin: 30px auto;
+    margin: 20px auto;
     width: 350px;
 
 }
@@ -49,6 +49,7 @@ h4{
     padding: 10px;
     box-shadow: var(--box-shadow);
     margin: 20px 0;
+    background-color: #fff;
 }
 
 .inc-exp-container div{
