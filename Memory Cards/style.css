@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+h1{
+    position: relative;
+
+}
+
+h1 button{
+    position: absolute;
+    right: 0;
+    transform: translate(120%, -50%);
+    z-index: 2;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #aaa;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.btn-small{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn-ghost{
+    background-color: transparent;
+    border: 0;
+}
+
+.clear{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.cards{
+    perspective: 1000px;
+    width: 500px;
+    position: absolute;
+    height: 300px;
+    max-width: 100%;
+}
+
+.card{
+    position: absolute;
+    opacity: 0;
+    font-size: 10px;
+}
+
+.cards.active{
+    opacity: 1;
+}
