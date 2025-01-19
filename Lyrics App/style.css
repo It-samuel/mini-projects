@@ -53,3 +53,75 @@ header h1{
     font-size: 2.5em;
     margin: 0;
 }
+
+form{
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+form input{
+    width: 100%;
+    padding: 15px 30px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+form button{
+    position: absolute;
+    padding: 13px 30px;
+    top: 2px;
+    right: 2px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #5513ee;
+    color: #fff;
+}
+
+.btn{
+    background-color: #5513ee;
+    color: #fff;
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 10px;
+}
+
+ul.songs{
+    list-style: none;
+    padding: 0;
+}
+
+ul.songs li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container{
+    margin: 30px auto;
+    max-width: 100%;
+    width: 500px;
+}
+
+.container h2{
+   font-weight: 300;
+}
+
+.container p{
+    text-align: center;
+}
+
+.centerd{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.centerd button{
+    margin: 15px;
+    transform: scale(1.2);
+}
+
